@@ -3,9 +3,11 @@
 // =============================
 
 .logo-wrapper {
-  float: left;
+  // float: left;
 
   .logo {
+    position: absolute;
+    margin-top: 20px;
     font-size: $logo-font-size;
     font-family: $logo-font-family;
   }

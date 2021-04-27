@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Serif+TC&display=swap");
+
+ul {
+  list-style-type: square;
+}
+
+.post .post-content h2 {
+  color: darken($theme-color, 10%);
+}
+
+.post .post-content img {
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125);
+}

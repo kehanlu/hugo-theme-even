@@ -2,24 +2,27 @@
 // Variables
 // ==============================
 
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap");
+
 // ========== Theme Color ========== //
 // Config here to change theme color
 // Default | Mint Green | Cobalt Blue | Hot Pink | Dark Violet
-$theme-color-config: 'Default';
+$theme-color-config: "hank";
 
 // Default theme color map
 $theme-color-map: (
-  'Default': #c05b4d #f8f5ec,
-  'Mint Green': #16982B #f5f5f5,
-  'Cobalt Blue': #0047AB #f0f2f5,
-  'Hot Pink': #FF69B4 #f8f5f5,
-  'Dark Violet': #9932CC #f5f4fa
+  "Default": #c05b4d #f8f5ec,
+  "Mint Green": #16982b #f5f5f5,
+  "Cobalt Blue": #0047ab #f0f2f5,
+  "Hot Pink": #ff69b4 #f8f5f5,
+  "Dark Violet": #9932cc #f5f4fa,
+  "hank": #2980b9 rgba(254, 252, 250, 0.7),
 );
 
 // Check theme color config.
 // if it does not exist, use default theme color.
 @if not(map-has-key($theme-color-map, $theme-color-config)) {
-  $theme-color-config: 'Default';
+  $theme-color-config: "Default";
 }
 $theme-color-list: map-get($theme-color-map, $theme-color-config);
 
@@ -29,7 +32,6 @@ $theme-color: nth($theme-color-list, 1) !default;
 // Deputy theme color of the site.
 $deputy-color: nth($theme-color-list, 2) !default;
 
-
 // ========== Color ========== //
 $black: #0a0a0a !default;
 $white: #fefefe !default;
@@ -37,13 +39,12 @@ $light-gray: #e6e6e6 !default;
 $gray: #cacaca !default;
 $dark-gray: #8a8a8a !default;
 
-
 // ========== Global ========== //
 // Text color of the body.
 $global-font-color: #34495e !default;
 
 // Font size attribute applied to '<html>' and '<body>'.
-$global-font-size: 16px !default;
+$global-font-size: 20px !default;
 
 // Global width of '<body>'.
 $global-body-width: 800px !default;
@@ -52,27 +53,31 @@ $global-body-width: 800px !default;
 $global-container-padding: 0 20px !default;
 
 // Default line height for all type. `$global-lineheight` is 24px while `$global-font-size` is 16px.
-$global-lineheight: 1.5 !default;
+$global-lineheight: 1.3em !default;
 
 // Font family of the site.
-$global-font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif !default;
+// $global-font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif !default;
+$global-font-family: "Georgia", "Noto Sans TC", "Helvetica Neue", Arial,
+  sans-serif !default;
 
 // Serif font family of the site.
-$global-serif-font-family: Athelas, STHeiti, Microsoft Yahei, serif !default;
+$global-serif-font-family: "Georgia", "Noto Serif TC", Athelas, STHeiti,
+  Microsoft Yahei, serif !default;
+// $global-serif-font-family: Georgia, "Noto Sans TC", serif;
+// $global-font-family: $global-serif-font-family;
 
 // Background color of the site.
 $global-background: $white !default;
 
 // Headings font size of the site.
 $global-headings: (
-  h1: 26px,
-  h2: 24px,
-  h3: 20px,
-  h4: 16px,
+  h1: 1.8em,
+  h2: 1.6em,
+  h3: 1.2em,
+  h4: 1em,
   h5: 14px,
-  h6: 14px
+  h6: 14px,
 ) !default;
-
 
 // ========== Header ========== //
 // Padding of the site header.
@@ -80,23 +85,26 @@ $header-padding: 20px 20px !default;
 
 // Font family: Chancery
 @font-face {
-  font-family: 'Chancery';
-  src: url('../fonts/chancery/apple-chancery-webfont.eot');
-  src: local('Apple Chancery'), url('../fonts/chancery/apple-chancery-webfont.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/chancery/apple-chancery-webfont.woff2') format('woff2'),
-  url('../fonts/chancery/apple-chancery-webfont.woff') format('woff'),
-  url('../fonts/chancery/apple-chancery-webfont.ttf') format('truetype'),
-  url('../fonts/chancery/apple-chancery-webfont.svg#apple-chancery') format('svg');
+  font-family: "Chancery";
+  src: url("../fonts/chancery/apple-chancery-webfont.eot");
+  src: local("Apple Chancery"),
+    url("../fonts/chancery/apple-chancery-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/chancery/apple-chancery-webfont.woff2") format("woff2"),
+    url("../fonts/chancery/apple-chancery-webfont.woff") format("woff"),
+    url("../fonts/chancery/apple-chancery-webfont.ttf") format("truetype"),
+    url("../fonts/chancery/apple-chancery-webfont.svg#apple-chancery")
+      format("svg");
   font-weight: lighter;
   font-style: normal;
   font-display: swap;
 }
 
 // Font size of the logo.
-$logo-font-size: 48px !default;
+$logo-font-size: 30px !default;
 
 // Font family of the logo.
-$logo-font-family: 'Chancery', cursive, LiSu, sans-serif !default;
+$logo-font-family: "Chancery", cursive, LiSu, sans-serif !default;
 
 // Margin of menu item.
 $menu-item-margin-left: 10px !default;
@@ -147,7 +155,6 @@ $post-tags-padding: 15px 0 !default;
 // Font size of post pagination.
 $post-nav-font-size: 18px !default;
 
-
 // ========== TOC ========== //
 // Width of the post toc.
 $post-toc-width: 200px !default;
@@ -195,7 +202,7 @@ $code-font-size: 0.9em !default;
 
 // Font family of the code.
 $code-font-family: Consolas, Monaco, Menlo, "DejaVu Sans Mono",
- "Bitstream Vera Sans Mono", "Courier New", monospace !default;
+  "Bitstream Vera Sans Mono", "Courier New", monospace !default;
 
 // Color of code highlight, solarized.
 $code-highlight-color: (
@@ -206,13 +213,14 @@ $code-highlight-color: (
   attribute: #b58900,
   symbol: #cb4b16,
   built_in: #dc322f,
-  formula: #eee8d5
+  formula: #eee8d5,
 ) !default;
 
 // Code type list.
 $code-type-list: (
   // Custom code type
   language-bash: "Bash",
+  language-zsh: "zsh",
   language-c: "C",
   language-cs: "C#",
   language-cpp: "C++",
@@ -234,7 +242,6 @@ $code-type-list: (
   language-ruby: "Ruby",
   language-sql: "SQL",
   language-shell: "Shell",
-
   language-erlang: "Erlang",
   language-go: "Go",
   language-go-html-template: "Go HTML Template",
@@ -258,8 +265,8 @@ $code-type-list: (
 ) !default;
 
 // Color of the code background.
+// $code-background: $deputy-color !default;
 $code-background: $deputy-color !default;
-
 
 // ========== Pagination ========== //
 // Margin of the pagination.
@@ -267,7 +274,6 @@ $pagination-margin: 2em 0 !default;
 
 // Font size of the pagination (Without post, post pagination see line 140).
 $pagination-font-size: 20px !default;
-
 
 // ========== Footer ========== //
 // Margin top of the footer.
@@ -282,13 +288,12 @@ $social-icon-font-size: 30px !default;
 // Margin of the copyright.
 $copyright-margin: 10px 0 !default;
 
-
 // ========== Archive ========== //
 // Margin of the archive.
 $archive-margin: 2em 0px !default;
 
 // Max width of the archive.
-$archive-max-width: 550px !default;
+$archive-max-width: $global-body-width !default;
 
 // Font size of the archive name.
 $archive-name-font-size: 30px !default;

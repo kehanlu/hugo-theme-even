@@ -22,6 +22,26 @@
         {{ end -}}
       </div>
     </div>
+    <!-- custom: add posts -->
+    <section id="archive" class="archive">
+      {{ range $key, $value := $terms -}}
+      <div class="archive-title">
+        <h2 class="archive-name">{{ $value.Term }}</h2>
+      </div>
+      {{ range $value.Pages.ByDate.Reverse}}
+      <div class="archive-post">
+        <span class="archive-post-time">
+          {{ .Date.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }}
+        </span>
+        <span class="archive-post-title">
+          <a href="{{ .RelPermalink }}" class="archive-post-link">
+            {{ .Title }}
+          </a>
+        </span>
+      </div>
+      {{ end }}
+      {{ end -}}
+    </section>
   {{- else if eq $name "tags" -}}
     <div class="terms">
       <div class="terms-title">

@@ -20,6 +20,7 @@
       font-weight: 400;
       font-size: $archive-name-font-size;
       line-height: $archive-name-font-size + 2px;
+      margin: 20px 0 10px 0;
     }
 
     .archive-post-counter {
@@ -29,7 +30,7 @@
 
   .collection-title {
     font-family: $global-serif-font-family;
-  
+
     .archive-year {
       margin: 15px 0;
       font-weight: 400;
@@ -48,7 +49,6 @@
     }
 
     .archive-post-title {
-      
       .archive-post-link {
         color: $theme-color;
       }
