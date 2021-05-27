@@ -3,6 +3,7 @@
 
   .post-title {
     margin: 0;
+    line-height: 1.3;
     font-size: $post-title-font-size;
     font-weight: $post-title-font-weight;
     font-family: $global-serif-font-family;
@@ -15,6 +16,7 @@
   .post-meta {
     font-size: 14px;
     color: $post-meta-font-color;
+    margin-top: $post-meta-margin-top;
 
     .post-time {
       font-size: 15px;

@@ -2,8 +2,6 @@
 // Variables
 // ==============================
 
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap");
-
 // ========== Theme Color ========== //
 // Config here to change theme color
 // Default | Mint Green | Cobalt Blue | Hot Pink | Dark Violet
@@ -16,7 +14,7 @@ $theme-color-map: (
   "Cobalt Blue": #0047ab #f0f2f5,
   "Hot Pink": #ff69b4 #f8f5f5,
   "Dark Violet": #9932cc #f5f4fa,
-  "hank": #2980b9 rgba(254, 252, 250, 0.7),
+  "hank": #52adc8 #fafafa //rgba(254, 252, 250, 0.7),
 );
 
 // Check theme color config.
@@ -41,30 +39,28 @@ $dark-gray: #8a8a8a !default;
 
 // ========== Global ========== //
 // Text color of the body.
-$global-font-color: #34495e !default;
+$global-font-color: #494e52 !default;
 
 // Font size attribute applied to '<html>' and '<body>'.
 $global-font-size: 20px !default;
 
 // Global width of '<body>'.
-$global-body-width: 800px !default;
+$global-body-width: 1000px !default;
 
 // Padding of container main
-$global-container-padding: 0 20px !default;
+$global-container-padding: 0 1em !default;
 
 // Default line height for all type. `$global-lineheight` is 24px while `$global-font-size` is 16px.
 $global-lineheight: 1.3em !default;
 
 // Font family of the site.
 // $global-font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif !default;
-$global-font-family: "Georgia", "Noto Sans TC", "Helvetica Neue", Arial,
-  sans-serif !default;
+$global-font-family: "San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,"Noto Sans TC", sans-serif;
 
 // Serif font family of the site.
-$global-serif-font-family: "Georgia", "Noto Serif TC", Athelas, STHeiti,
-  Microsoft Yahei, serif !default;
-// $global-serif-font-family: Georgia, "Noto Sans TC", serif;
+// $global-serif-font-family: "Georgia", "Noto Serif TC", Athelas, STHeiti, Microsoft Yahei, serif !default;
 // $global-font-family: $global-serif-font-family;
+$global-serif-font-family: $global-font-family;
 
 // Background color of the site.
 $global-background: $white !default;
@@ -87,14 +83,11 @@ $header-padding: 20px 20px !default;
 @font-face {
   font-family: "Chancery";
   src: url("../fonts/chancery/apple-chancery-webfont.eot");
-  src: local("Apple Chancery"),
-    url("../fonts/chancery/apple-chancery-webfont.eot?#iefix")
-      format("embedded-opentype"),
+  src: local("Apple Chancery"), url("../fonts/chancery/apple-chancery-webfont.eot?#iefix") format("embedded-opentype"),
     url("../fonts/chancery/apple-chancery-webfont.woff2") format("woff2"),
     url("../fonts/chancery/apple-chancery-webfont.woff") format("woff"),
     url("../fonts/chancery/apple-chancery-webfont.ttf") format("truetype"),
-    url("../fonts/chancery/apple-chancery-webfont.svg#apple-chancery")
-      format("svg");
+    url("../fonts/chancery/apple-chancery-webfont.svg#apple-chancery") format("svg");
   font-weight: lighter;
   font-style: normal;
   font-display: swap;
@@ -129,13 +122,13 @@ $post-padding: 1.5em 0 !default;
 $post-border: 1px solid $light-gray !default;
 
 // Font size of post title.
-$post-title-font-size: 27px !default;
+$post-title-font-size: 1.3em !default;
 
 // Font weight of post title.
 $post-title-font-weight: 400 !default;
 
 // Margin top of the post meta (post time).
-$post-meta-margin-top: 5px !default;
+$post-meta-margin-top: 7px !default;
 
 // Font color of the post meta.
 $post-meta-font-color: $dark-gray !default;
@@ -195,14 +188,13 @@ $content-table-border-color: darken($deputy-color, 3%) !default;
 
 // ========== Code ========== //
 // Color of the code.
-$code-color: #c7254e !default;
+$code-color: $global-font-color !default;
 
 // Font size of code.
-$code-font-size: 0.9em !default;
+$code-font-size: .95em !default;
 
 // Font family of the code.
-$code-font-family: Consolas, Monaco, Menlo, "DejaVu Sans Mono",
-  "Bitstream Vera Sans Mono", "Courier New", monospace !default;
+$code-font-family: Consolas, Monaco, Menlo, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace !default;
 
 // Color of code highlight, solarized.
 $code-highlight-color: (

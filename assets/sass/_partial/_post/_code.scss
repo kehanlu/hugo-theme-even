@@ -191,10 +191,10 @@ figure.highlight {
 
     &:first-child {
       width: 10px;
-
+      vertical-align: top;
       pre {
         margin: 0;
-        padding: 47px 7px 10px;
+        padding: 47px 7px 5px;
       }
     }
 
@@ -203,7 +203,7 @@ figure.highlight {
 
       pre {
         margin: 0;
-        padding: 45px 10px 10px;
+        padding: 47px 0px 10px;
       }
     }
   }

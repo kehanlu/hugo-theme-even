@@ -7,14 +7,14 @@
 
   @for $i from 1 through 6 {
     h#{$i} {
-      font-weight: 400;
+      font-weight: 500;
       font-family: $global-serif-font-family;
-
+      line-height: 2;
       .anchor {
         float: left;
         line-height: 1;
-        margin-left: -20px;
-        padding-right: 4px;
+        margin-left: -10px;
+        // padding-right: 4px;
 
         &:hover {
           border-bottom: initial;
@@ -126,8 +126,8 @@
     box-shadow: inset 0 -1px 0 #b5b5b5;
     font-size: 0.8em;
     line-height: 1.25;
-    font-family: "SFMono-Regular", "Liberation Mono", "Roboto Mono", Menlo,
-      Monaco, Consolas, "Courier New", Courier, monospace;
+    font-family: "SFMono-Regular", "Liberation Mono", "Roboto Mono", Menlo, Monaco, Consolas, "Courier New", Courier,
+      monospace;
     color: #4a4a4a;
   }
 
