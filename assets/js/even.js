@@ -129,6 +129,7 @@ Even.fancybox = function() {
     $('.post-content').each(function() {
       $(this).find('img').each(function() {
         $(this).wrap(`<a class="fancybox" href="${this.src}" data-fancybox="gallery" data-caption="${this.title}"></a>`);
+        $(this).parent().parent().append(`<small class="caption">${this.alt}</small>`)
       });
     });
 
@@ -209,7 +210,15 @@ Even._linkToc = function() {
   const links = document.querySelectorAll('#TableOfContents a:first-child');
   for (let i = 0; i < links.length; i++) links[i].className += ' toc-link';
 
-  for (let num = 1; num <= 6; num++) {
+  //hank
+  const headers = document.querySelectorAll('.post-content>h1');
+  for (let i = 0; i < headers.length; i++) {
+    const header = headers[i];
+    header.innerHTML = `${header.innerHTML}<a href="#${header.id}" class="anchor"><i class="iconfont icon-link"></i></a>`;
+  }
+
+
+  for (let num = 2; num <= 6; num++) {
     const headers = document.querySelectorAll('.post-content>h' + num);
     for (let i = 0; i < headers.length; i++) {
       const header = headers[i];

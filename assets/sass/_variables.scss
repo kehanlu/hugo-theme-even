@@ -14,7 +14,7 @@ $theme-color-map: (
   "Cobalt Blue": #0047ab #f0f2f5,
   "Hot Pink": #ff69b4 #f8f5f5,
   "Dark Violet": #9932cc #f5f4fa,
-  "hank": #52adc8 #fafafa //rgba(254, 252, 250, 0.7),
+  "hank": #52adc8 #fafafa //rgba(254, 252, 250, 0.7),,,,,,
 );
 
 // Check theme color config.
@@ -55,7 +55,8 @@ $global-lineheight: 1.3em !default;
 
 // Font family of the site.
 // $global-font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif !default;
-$global-font-family: "San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,"Noto Sans TC", sans-serif;
+$global-font-family: "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, "Noto Sans TC",
+  sans-serif;
 
 // Serif font family of the site.
 // $global-serif-font-family: "Georgia", "Noto Serif TC", Athelas, STHeiti, Microsoft Yahei, serif !default;
@@ -67,7 +68,7 @@ $global-background: $white !default;
 
 // Headings font size of the site.
 $global-headings: (
-  h1: 1.8em,
+  h1: 2em,
   h2: 1.6em,
   h3: 1.2em,
   h4: 1em,
@@ -122,7 +123,7 @@ $post-padding: 1.5em 0 !default;
 $post-border: 1px solid $light-gray !default;
 
 // Font size of post title.
-$post-title-font-size: 1.3em !default;
+$post-title-font-size: 1.5em !default;
 
 // Font weight of post title.
 $post-title-font-weight: 400 !default;
@@ -188,10 +189,10 @@ $content-table-border-color: darken($deputy-color, 3%) !default;
 
 // ========== Code ========== //
 // Color of the code.
-$code-color: $global-font-color !default;
+$code-color: darken($global-font-color, 0.5) !default;
 
 // Font size of code.
-$code-font-size: .95em !default;
+$code-font-size: 0.95em !default;
 
 // Font family of the code.
 $code-font-family: Consolas, Monaco, Menlo, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace !default;
