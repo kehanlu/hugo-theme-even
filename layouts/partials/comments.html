@@ -1,6 +1,15 @@
 {{ if and .IsPage (ne .Params.comment false) -}}
   <!-- Telegram -->
   <script async src="https://comments.app/js/widget.js?3" data-comments-app-website="MfX9iJYl" data-limit="5" data-page-id="{{ .Permalink }}" data-outlined="1"></script>
+  <!-- utteranc -->
+  <script src="https://utteranc.es/client.js"
+        repo="kehanlu/blog-comments"
+        issue-term="og:title"
+        label="Comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+  </script>
   <!-- Disqus -->
   {{- if .Site.DisqusShortname -}}
     <div id="disqus_thread"></div>

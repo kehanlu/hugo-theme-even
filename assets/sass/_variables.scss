@@ -14,7 +14,7 @@ $theme-color-map: (
   "Cobalt Blue": #0047ab #f0f2f5,
   "Hot Pink": #ff69b4 #f8f5f5,
   "Dark Violet": #9932cc #f5f4fa,
-  "hank": #52adc8 #fafafa //rgba(254, 252, 250, 0.7),,,,,,
+  "hank": #52adc8 #fafafa //rgba(254, 252, 250, 0.7),,,,,,,,,,,,,,
 );
 
 // Check theme color config.
@@ -55,8 +55,8 @@ $global-lineheight: 1.3em !default;
 
 // Font family of the site.
 // $global-font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif !default;
-$global-font-family: "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, "Noto Sans TC",
-  sans-serif;
+$global-font-family: "Ubuntu", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial,
+  "Noto Sans TC", sans-serif;
 
 // Serif font family of the site.
 // $global-serif-font-family: "Georgia", "Noto Serif TC", Athelas, STHeiti, Microsoft Yahei, serif !default;
@@ -185,14 +185,14 @@ $content-blockquote-backgroud: rgba($theme-color, 0.05) !default;
 $content-blockquote-border-left: 3px solid rgba($theme-color, 0.3) !default;
 
 // Border color of the table.
-$content-table-border-color: darken($deputy-color, 3%) !default;
+$content-table-border-color: darken($deputy-color, 10%) !default;
 
 // ========== Code ========== //
 // Color of the code.
 $code-color: darken($global-font-color, 0.5) !default;
 
 // Font size of code.
-$code-font-size: 0.95em !default;
+$code-font-size: 0.9em !default;
 
 // Font family of the code.
 $code-font-family: Consolas, Monaco, Menlo, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace !default;
