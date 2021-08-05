@@ -14,7 +14,7 @@ $theme-color-map: (
   "Cobalt Blue": #0047ab #f0f2f5,
   "Hot Pink": #ff69b4 #f8f5f5,
   "Dark Violet": #9932cc #f5f4fa,
-  "hank": #52adc8 #fafafa //rgba(254, 252, 250, 0.7),,,,,,,,,,,,,,
+  "hank": #52adc8 #fafafa //rgba(254, 252, 250, 0.7),,,,,,,,,,,,,,,,,,,
 );
 
 // Check theme color config.
@@ -45,7 +45,7 @@ $global-font-color: #494e52 !default;
 $global-font-size: 20px !default;
 
 // Global width of '<body>'.
-$global-body-width: 1000px !default;
+$global-body-width: 870px !default;
 
 // Padding of container main
 $global-container-padding: 0 1em !default;
@@ -68,8 +68,8 @@ $global-background: $white !default;
 
 // Headings font size of the site.
 $global-headings: (
-  h1: 2em,
-  h2: 1.6em,
+  h1: 1.7em,
+  h2: 1.5em,
   h3: 1.2em,
   h4: 1em,
   h5: 14px,
@@ -123,7 +123,7 @@ $post-padding: 1.5em 0 !default;
 $post-border: 1px solid $light-gray !default;
 
 // Font size of post title.
-$post-title-font-size: 1.5em !default;
+$post-title-font-size: 1.3em !default;
 
 // Font weight of post title.
 $post-title-font-weight: 400 !default;
