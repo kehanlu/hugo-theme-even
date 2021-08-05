@@ -14,7 +14,7 @@ $theme-color-map: (
   "Cobalt Blue": #0047ab #f0f2f5,
   "Hot Pink": #ff69b4 #f8f5f5,
   "Dark Violet": #9932cc #f5f4fa,
-  "hank": #52adc8 #fafafa //rgba(254, 252, 250, 0.7),,,,,,,,,,,,,,,,,,,
+  "hank": #52adc8 #fafafa //rgba(254, 252, 250, 0.7),,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 );
 
 // Check theme color config.
@@ -68,9 +68,9 @@ $global-background: $white !default;
 
 // Headings font size of the site.
 $global-headings: (
-  h1: 1.7em,
-  h2: 1.5em,
-  h3: 1.2em,
+  h1: 1.5em,
+  h2: 1.3em,
+  h3: 1.1em,
   h4: 1em,
   h5: 14px,
   h6: 14px,
@@ -95,10 +95,10 @@ $header-padding: 20px 20px !default;
 }
 
 // Font size of the logo.
-$logo-font-size: 30px !default;
+$logo-font-size: 40px !default;
 
 // Font family of the logo.
-$logo-font-family: "Chancery", cursive, LiSu, sans-serif !default;
+$logo-font-family: "Caveat", "Chancery", cursive, LiSu, sans-serif !default;
 
 // Margin of menu item.
 $menu-item-margin-left: 10px !default;
@@ -123,7 +123,7 @@ $post-padding: 1.5em 0 !default;
 $post-border: 1px solid $light-gray !default;
 
 // Font size of post title.
-$post-title-font-size: 1.3em !default;
+$post-title-font-size: 1.2em !default;
 
 // Font weight of post title.
 $post-title-font-weight: 400 !default;
@@ -289,10 +289,10 @@ $archive-margin: 2em 0px !default;
 $archive-max-width: $global-body-width !default;
 
 // Font size of the archive name.
-$archive-name-font-size: 30px !default;
+$archive-name-font-size: 22px !default;
 
 // Font size of the collection title.
-$collection-title-font-size: 28px !default;
+$collection-title-font-size: $archive-name-font-size !default;
 
 // Padding of the archive post.
 $archive-post-padding: 3px 20px !default;
